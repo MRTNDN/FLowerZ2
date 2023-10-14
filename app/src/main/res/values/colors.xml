@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Основной цвет приложения -->
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!-- Цвет для акцентных элементов -->
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Пример цвета фона -->
+    <color name="colorPrimaryDark">#FFFFFF</color>
+
+</resources>
