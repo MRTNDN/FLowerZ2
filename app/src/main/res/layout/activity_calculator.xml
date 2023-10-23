@@ -50,6 +50,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="7"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -57,6 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="8"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -64,6 +66,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="9"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -71,6 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="/"
+            style="@color/colorPrimary"
             android:onClick="onOperationClick"
             android:layout_columnWeight="1"/>
 
@@ -78,6 +82,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="4"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -85,6 +90,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="5"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -92,6 +98,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="6"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -99,6 +106,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="*"
+            style="@color/colorPrimary"
             android:onClick="onOperationClick"
             android:layout_columnWeight="1"/>
 
@@ -106,6 +114,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="1"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -113,6 +122,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="2"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -120,12 +130,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="3"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="-"
+            style="@color/colorPrimary"
             android:onClick="onOperationClick"
             android:layout_columnWeight="1"/>
 
@@ -134,6 +146,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="C"
+            style="@color/colorPrimary"
             android:onClick="onClearClick"
             android:layout_columnWeight="1"/>
 
@@ -141,6 +154,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="0"
+            style="@color/colorPrimary"
             android:onClick="onNumberClick"
             android:layout_columnWeight="1"/>
 
@@ -148,6 +162,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="="
+            style="@color/colorPrimary"
             android:onClick="onEqualsClick"
             android:layout_columnWeight="1"/>
 
@@ -155,7 +170,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="+"
+            style="@color/colorPrimary"
             android:onClick="onOperationClick"
             android:layout_columnWeight="1"/>
     </GridLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Назад"
+        style="@style/AppTheme"/>
 </LinearLayout>

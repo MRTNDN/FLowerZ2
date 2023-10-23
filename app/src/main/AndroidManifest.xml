@@ -26,6 +26,26 @@
             android:name=".calculator"
             android:label="FlowerZ">
         </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab1"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab2"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab3"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab5"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
     </application>
 
 </manifest>

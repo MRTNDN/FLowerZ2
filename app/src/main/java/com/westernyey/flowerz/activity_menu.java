@@ -28,6 +28,9 @@ public class activity_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 1
+                // Создаем Intent для открытия lab1.java
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab1.class);
+                startActivity(intent);
             }
         });
 
@@ -35,6 +38,8 @@ public class activity_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 2
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab2.class);
+                startActivity(intent);
             }
         });
 
@@ -42,6 +47,8 @@ public class activity_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 3
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab3.class);
+                startActivity(intent);
             }
         });
 
@@ -56,6 +63,8 @@ public class activity_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 5
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab5.class);
+                startActivity(intent);
             }
         });
 
@@ -81,5 +90,6 @@ public class activity_menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

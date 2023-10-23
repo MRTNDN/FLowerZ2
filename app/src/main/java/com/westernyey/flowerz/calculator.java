@@ -1,5 +1,6 @@
 package com.westernyey.flowerz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,17 @@ public class calculator extends AppCompatActivity {
         resultField = findViewById(R.id.resultField);
         numberField = findViewById(R.id.numberField);
         operationField = findViewById(R.id.operationField);
+
+        // Объявляем и находим кнопку "Назад"
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Создать Intent для возвращения к MainActivity
+                Intent intent = new Intent(calculator.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onNumberClick(View view) {
@@ -93,20 +105,18 @@ public class calculator extends AppCompatActivity {
         lastOperation = "=";
     }
 
-
-        // Обработчик события клика на кнопку "Равно" (=)
-        public void onEqualsClick(View view) {
-            String number = numberField.getText().toString();
-            if (number.length() > 0) {
-                number = number.replace(',', '.');
-                try {
-                    performOperation(Double.valueOf(number), lastOperation);
-                } catch (NumberFormatException ex) {
-                    numberField.setText("");
-                }
+    // Обработчик события клика на кнопку "Равно" (=)
+    public void onEqualsClick(View view) {
+        String number = numberField.getText().toString();
+        if (number.length() > 0) {
+            number = number.replace(',', '.');
+            try {
+                performOperation(Double.valueOf(number), lastOperation);
+            } catch (NumberFormatException ex) {
+                numberField.setText("");
             }
-            lastOperation = "=";
-            operationField.setText(lastOperation);
         }
+        lastOperation = "=";
+        operationField.setText(lastOperation);
     }
-
+}

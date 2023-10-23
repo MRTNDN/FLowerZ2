@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         nameEditText = findViewById(R.id.nameEditText);
-        resultTextView = findViewById(R.id.resultTextView);
+        resultTextView = findViewById(R.id.resultTextField);
         createCharacterButton = findViewById(R.id.createCharacterButton);
         secondActivityButton = findViewById(R.id.secondActivityButton); // Инициализировали здесь
         THActivityButton = findViewById(R.id.THActivityButton); // Инициализировали кнопку правильно
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     Character character = new Character(characterName);
 
                     // Отображаем информацию о созданном персонаже
-                    resultTextView.setText("Персонаж создан:\nИмя: " + characterName);
+                    resultTextView.setText(" создан:\nИмя: " + characterName);
                 } else {
-                    resultTextView.setText("Введите имя персонажа");
+                    resultTextView.setText("Введите имя ");
                 }
             }
         });
