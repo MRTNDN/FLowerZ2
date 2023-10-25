@@ -22,6 +22,8 @@ public class activity_menu extends AppCompatActivity {
         Button button5 = findViewById(R.id.button5);
         Button button6 = findViewById(R.id.button6);
         Button button7 = findViewById(R.id.button7);
+        Button button8 = findViewById(R.id.button8);
+        Button button9 = findViewById(R.id.button9);
         Button backButton  = findViewById(R.id.backButton);
         // Настроить обработчики нажатий для кнопок
         button1.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +73,8 @@ public class activity_menu extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Действие при нажатии на Кнопку 6
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab6ScrollView.class);
+                startActivity(intent);
             }
         });
 
@@ -79,8 +82,27 @@ public class activity_menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 7
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.lab7_editText.class);
+                startActivity(intent);
             }
         });
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 8
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.ToastSnackbar.class);
+                startActivity(intent);
+            }
+        });
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 9
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.Checkbox.class);
+                startActivity(intent);
+            }
+        });
+
         // Установить обработчик нажатия для кнопки "Назад"
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -46,6 +46,26 @@
             android:label="FlowerZ"
             tools:ignore="Instantiatable">
         </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab6ScrollView"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.lab7_editText"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.ToastSnackbar"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.Checkbox"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
     </application>
 
 </manifest>
