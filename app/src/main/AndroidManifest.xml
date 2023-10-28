@@ -66,6 +66,16 @@
             android:label="FlowerZ"
             tools:ignore="Instantiatable">
         </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.ToggleButton"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.RadioButton"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
     </application>
 
 </manifest>

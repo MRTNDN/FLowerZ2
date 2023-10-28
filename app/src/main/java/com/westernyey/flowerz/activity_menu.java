@@ -24,6 +24,7 @@ public class activity_menu extends AppCompatActivity {
         Button button7 = findViewById(R.id.button7);
         Button button8 = findViewById(R.id.button8);
         Button button9 = findViewById(R.id.button9);
+        Button button10 = findViewById(R.id.button10);
         Button backButton  = findViewById(R.id.backButton);
         // Настроить обработчики нажатий для кнопок
         button1.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +100,14 @@ public class activity_menu extends AppCompatActivity {
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 9
                 Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.Checkbox.class);
+                startActivity(intent);
+            }
+        });
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 9
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.ToggleButton.class);
                 startActivity(intent);
             }
         });

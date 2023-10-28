@@ -70,6 +70,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Лабораторная 9 Checkbox" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная 9 ToggleButton" />
 
     <Button
         android:id="@+id/backButton"
