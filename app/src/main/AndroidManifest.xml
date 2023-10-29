@@ -72,7 +72,17 @@
             tools:ignore="Instantiatable">
         </activity>
         <activity
-            android:name="com.westernyey.flowerz.lab.RadioButton"
+            android:name="com.westernyey.flowerz.lab.RadioButtonZ"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.DatePickerZ"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.TimePickerZ"
             android:label="FlowerZ"
             tools:ignore="Instantiatable">
         </activity>

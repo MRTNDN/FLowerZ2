@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.westernyey.flowerz.lab.TimePickerZ;
+
 public class activity_menu extends AppCompatActivity {
 
     @Override
@@ -25,6 +27,9 @@ public class activity_menu extends AppCompatActivity {
         Button button8 = findViewById(R.id.button8);
         Button button9 = findViewById(R.id.button9);
         Button button10 = findViewById(R.id.button10);
+        Button button11 = findViewById(R.id.button11);
+        Button button12 = findViewById(R.id.button12);
+        Button button13 = findViewById(R.id.button13);
         Button backButton  = findViewById(R.id.backButton);
         // Настроить обработчики нажатий для кнопок
         button1.setOnClickListener(new View.OnClickListener() {
@@ -106,12 +111,35 @@ public class activity_menu extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Действие при нажатии на Кнопку 9
+                // Действие при нажатии на Кнопку 10
                 Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.ToggleButton.class);
                 startActivity(intent);
             }
         });
-
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 11
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.RadioButtonZ.class);
+                startActivity(intent);
+            }
+        });
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 12
+                Intent intent = new Intent(activity_menu.this, com.westernyey.flowerz.lab.DatePickerZ.class);
+                startActivity(intent);
+            }
+        });
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 13
+                Intent intent = new Intent(activity_menu.this, TimePickerZ.class);
+                startActivity(intent);
+            }
+        });
         // Установить обработчик нажатия для кнопки "Назад"
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

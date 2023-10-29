@@ -69,12 +69,28 @@
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Лабораторная 9 Checkbox" />
+        android:text="Лабораторная  Checkbox" />
     <Button
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Лабораторная 9 ToggleButton" />
+        android:text="Лабораторная  ToggleButton" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная  RadioButton" />
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная   DatePicker" />
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лабораторная   TimePicker" />
+
 
     <Button
         android:id="@+id/backButton"

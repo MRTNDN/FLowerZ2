@@ -2,6 +2,7 @@ package com.westernyey.flowerz.lab;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 
 import com.westernyey.flowerz.R;
 
-public class RadioButton extends AppCompatActivity {
+public class RadioButtonZ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,21 +21,21 @@ public class RadioButton extends AppCompatActivity {
     }
 
 
+    @SuppressLint("NonConstantResourceId")
     public void onRadioButtonClicked(View view) {
-// если переключатель отмечен
+        // Если переключатель отмечен
         boolean checked = ((RadioButton) view).isChecked();
         TextView selection = findViewById(R.id.selection);
-// Получаем нажатый переключатель
-        switch (view.getId()) {
-            case R.id.java:
-                if (checked) {
-                    selection.setText("Выбрана Java");
-                }
-                break;
-            case R.id.kotlin:
-                if (checked) {selection.setText("Выбран Kotlin");
-                }
-                break;
+        // Получаем нажатый переключатель
+        int id = view.getId();
+
+        if (id == R.id.java) {
+            if (checked) {
+                selection.setText("Выбрана Java");
+            }
+        } else if (id == R.id.kotlin) {
+            if (checked) {
+                selection.setText("Выбран Kotlin");
+            }
         }
-    }
-}
+    }}
