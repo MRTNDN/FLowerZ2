@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.westernyey.flowerz.lab.TimePickerZ;
+import com.westernyey.flowerz.lab.video;
 
 public class activity_menu extends AppCompatActivity {
+    private String receivedCharacterName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,18 @@ public class activity_menu extends AppCompatActivity {
         Button button11 = findViewById(R.id.button11);
         Button button12 = findViewById(R.id.button12);
         Button button13 = findViewById(R.id.button13);
+        Button button14 = findViewById(R.id.button14);
         Button backButton  = findViewById(R.id.backButton);
         // Настроить обработчики нажатий для кнопок
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("characterName")) {
+            receivedCharacterName = intent.getStringExtra("characterName");
+        }
+        TextView characterNameTextView = findViewById(R.id.characterNameTextView);
+        characterNameTextView.setText("Name: " + receivedCharacterName);
+
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -137,6 +150,14 @@ public class activity_menu extends AppCompatActivity {
             public void onClick(View v) {
                 // Действие при нажатии на Кнопку 13
                 Intent intent = new Intent(activity_menu.this, TimePickerZ.class);
+                startActivity(intent);
+            }
+        });
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии на Кнопку 14
+                Intent intent = new Intent(activity_menu.this, video.class);
                 startActivity(intent);
             }
         });

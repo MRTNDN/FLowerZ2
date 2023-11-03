@@ -56,6 +56,8 @@ public class lab2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(com.westernyey.flowerz.lab.lab2.this, activity_menu.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });

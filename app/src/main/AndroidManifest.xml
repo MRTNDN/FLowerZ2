@@ -86,6 +86,11 @@
             android:label="FlowerZ"
             tools:ignore="Instantiatable">
         </activity>
+        <activity
+            android:name="com.westernyey.flowerz.lab.video"
+            android:label="FlowerZ"
+            tools:ignore="Instantiatable">
+        </activity>
     </application>
 
 </manifest>

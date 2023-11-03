@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class calculator extends AppCompatActivity {
+    private String receivedCharacterName;
 
     TextView resultField; // текстовое поле для вывода результата
     EditText numberField; // поле для ввода числа
@@ -28,6 +29,14 @@ public class calculator extends AppCompatActivity {
         numberField = findViewById(R.id.numberField);
         operationField = findViewById(R.id.operationField);
 
+        Intent intent = getIntent();
+        if (intent.hasExtra("characterName")) {
+            receivedCharacterName = intent.getStringExtra("characterName");
+        }
+        TextView characterNameTextView = findViewById(R.id.characterNameTextView);
+        characterNameTextView.setText("Name: " + receivedCharacterName);
+
+
         // Объявляем и находим кнопку "Назад"
         Button backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +44,8 @@ public class calculator extends AppCompatActivity {
             public void onClick(View v) {
                 // Создать Intent для возвращения к MainActivity
                 Intent intent = new Intent(calculator.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });

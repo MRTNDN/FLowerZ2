@@ -32,6 +32,8 @@ public class lab1 extends AppCompatActivity {
             public void onClick(View view) {
                 // Создаем Intent для возвращения к предыдущему активити
                 Intent intent = new Intent(lab1.this, activity_menu.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });

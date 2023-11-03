@@ -33,6 +33,8 @@ public class DatePickerZ extends AppCompatActivity {
             public void onClick(View v) {
                 // Создаем Intent для возврата к activity_menu (или к вашей предыдущей активности)
                 Intent intent = new Intent(DatePickerZ.this, activity_menu.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });

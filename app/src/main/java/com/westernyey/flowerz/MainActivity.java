@@ -63,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
         secondActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String characterName = nameEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, activity_menu.class);
+                intent.putExtra("characterName", characterName);
                 startActivity(intent);
             }
         });
@@ -71,7 +73,9 @@ public class MainActivity extends AppCompatActivity {
         THActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String characterName = nameEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, calculator.class);
+                intent.putExtra("characterName", characterName); // "characterName" - это ключ
                 startActivity(intent);
             }
         });
