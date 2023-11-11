@@ -2,7 +2,6 @@ package com.westernyey.flowerz.lab;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -16,11 +15,10 @@ import com.westernyey.flowerz.R;
 public class video extends AppCompatActivity {
     VideoView videoPlayer;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.video);
 
         videoPlayer = findViewById(R.id.videoPlayer);
         Uri myVideoUri = Uri.parse("android.resource://" +
@@ -54,4 +52,4 @@ public class video extends AppCompatActivity {
     }
 
 }
-}
+
